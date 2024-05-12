@@ -208,6 +208,7 @@ button a {
  align-items: center;
  background-color: #e5e7eb;
  margin: auto  200px auto 200px;
+ gap: 10px;
  padding: 100px 0 100px 0;
  box-shadow: 10px 10px 10px rgb(192, 195, 199);
  border-radius: 20px;
@@ -221,9 +222,10 @@ button a {
  color: #1f2937;
 }
 .quote .author {
+ width: 60%;
  font-size: 20px;
- font-weight: 700;
- align-self: center;
+ font-weight: 600;
+ text-align: right;
  color: #1f2937;  
 }
 
