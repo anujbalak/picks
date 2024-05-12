@@ -270,6 +270,8 @@ button.github {
 /* owl */
 .owl-page {
  display: flex;
+ width: 100vw;
+ height: 100vh;
  align-self: center;
  color: white;
  font-family: Arial, Helvetica, sans-serif;
