@@ -20,10 +20,6 @@ body {
  background-color: #1f2937;
  color: white;
  width: 100%;
- flex-direction: column;
- align-items: center;
- flex-wrap: wrap;
- height: 800px;
 }
 
 a {
@@ -35,6 +31,7 @@ a {
  display: flex;
  width: 100%;
  justify-content: space-between;
+ flex-wrap: wrap;
 }
 
 .header-links {
@@ -77,11 +74,10 @@ a {
 
 .header-content {
  display: flex;
- height: 800px;
  flex-wrap: wrap;
- justify-content: center;
+ padding: 150px 100px 150px ;
  align-items: center;
- margin-bottom: 200px;
+ justify-content: center;
  gap: 30px;
  
 }
@@ -144,7 +140,7 @@ button a {
  display: flex;
  flex-direction: column;
  align-items: center;
- margin: 50px 200px 50px 200px;
+ margin: 50px 150px 50px 150px;
  gap: 80px;
 }
 
@@ -212,7 +208,7 @@ button a {
  align-items: center;
  background-color: #e5e7eb;
  margin: auto  200px auto 200px;
- height: 300px;
+ padding: 100px 0 100px 0;
  box-shadow: 10px 10px 10px rgb(192, 195, 199);
  border-radius: 20px;
 }
@@ -237,6 +233,7 @@ button a {
  display: flex;
  color: #1f2937;
  border-radius: 20px;
+ gap: 20px;
  background-color:rgb(242, 228, 143);
  padding: 50px;
  box-shadow: 10px 10px 10px rgb(207, 195, 123);
@@ -281,7 +278,17 @@ button.github {
 @media only screen and (max-width: 400px) {
     .header-container {
         height: 2000px;
-    }    
+    } 
+    #content {
+     margin: auto 0 auto 0;
+    }   
+}
+
+/* tablet */
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+    #content {
+     margin: auto 50px auto 50px;
+    }
 }
 
 /* desktop */
