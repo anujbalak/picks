@@ -12,6 +12,9 @@ What do you like ? music, games, movies or books... it could be anything, right?
 - Books
 - Many more coming soon _(hope so)_
 ---
+# What's New
+Now you can make you list for favourite books as library (Note: You will lose your list after reloading, saving feature will come in future)
+---
 # Want to add your picks
 I really do love recommandations and really want to hear your picks. Oh! you have a list for that, magnificient!
 you can share   
