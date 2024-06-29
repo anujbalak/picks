@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ color: #FFF4E0;
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: #4D4D4D;
+ display: grid;
+ grid-template-rows: 150px minmax(100vh, 1fr);
+ flex-direction: column;
+}
+
+
+.header {
+ display: flex;
+ width: 100%;
+ font-family: Besley;
+ justify-content: center;
+ padding: 20px;
+ gap: 10px;
+ font-size: 60px;
+ align-items: center;
+ color: rgb(212, 207, 244);
+}
+
+.section {
+ border-radius: 30px 30px 0 0;
+ background-color: #FFF4E0;
+}
+
+.logo-image {
+ image-rendering: pixelated;
+ width: 80px;
+}
+ul {
+ list-style-type: none;
+}
+
+.card {
+    color: #FFF5C0;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    padding: 30px;
+    background-color: #FF4646;
+    margin: 40px 80px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 0px #b93131;
+    
+}
+
+.bookInfo {
+    display: grid;
+    align-items: center;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.page-info {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ gap: 20px;
+ padding: 40px;
+ justify-content: center;
+ color: #4D4D4D;
+}
+
+.page-title {
+ font-size: 80px;
+ font-weight: 800;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.page-discription {
+ font-size: 25px;
+ font-family: monospace;
+}
+
+.img {
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+
+.title, .author, .pages, .status {
+ font-size: 3rem;
+ color: #ffedb8;
+}
+
+/* -------------------------------Books------------------------------- */
+ 
+  div.custom-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  button.custom-list-button {
+    margin-right: 20px;
+    font-size: 40px;
+    padding: 15px;
+    background-color: transparent;
+    border: solid 2px #FF4646;
+    border-radius: 20px;
+}
+button.custom-list-button>a {
+    color: #FF4646;
+} 
+
+button.custom-list-button:hover {
+    background-color: #FF4646;
+    cursor: pointer;  
+    color: #ffedb8;
+}
+/* ---------------------------------dialog-------------------------------------- */
+dialog {
+    border: #4D4D4D solid 2px;
+    position: absolute;
+    box-shadow: 10px 10px 1px #4D4D4D;
+    background-color: #FF4646;
+    padding: 30px;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+dialog form {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 1fr repeat(4, 1.5fr);
+}
+
+form label {
+    color: #ffedb8;
+    font-size: 2.5rem;
+    display: flex;
+    gap: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+label input, select{
+    border: none;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffedb8;
+    width: 300px;
+    border-bottom: #ffedb8 2px solid;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+select {
+    background-color:#FF4646;
+}
+
+#statusValue {
+    font-family: monospace;
+    font-size: 2.5rem
+}
+select:focus {
+    border: none;
+}
+
+#closeButton, #confirmButton, .removeBtn {
+    width: 50px;
+    font-size: 2rem;
+    justify-self: right;
+    color: #ffedb8;
+    background-color: transparent;
+    border: #ffedb8 solid 2px;
+    border-radius: 10px;
+}
+
+#confirmButton {
+    width: 100%;
+}
+
+#closeButton:hover, #confirmButton:hover, .removeBtn:hover {
+    cursor: pointer;
+    color: #4D4D4D;
+    background-color: #ffedb8;
+
+}
+input#pages::-webkit-outer-spin-button,
+input#pages::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input#pages {
+    -moz-appearance: textfield;
+}
+/* ------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 800px) {
+    .card {
+     flex-wrap: wrap;
+    }
+}

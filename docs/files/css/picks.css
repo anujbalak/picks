@@ -152,8 +152,31 @@ strong {
 
 /* -------------------------------Books------------------------------- */
  
-  
+  div.custom-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  button.custom-list-button {
+    margin-right: 20px;
+    font-size: 40px;
+    padding: 15px;
+    background-color: #ffe9d5;
+    border: solid 2px #FF4646;
+    border-radius: 20px;
+}
+button.custom-list-button>a {
+    color: #FF4646;
+} 
 
+button.custom-list-button:hover {
+    background-color: #FF4646;
+    cursor: pointer;
+    border: none;   
+}
+
+button.custom-list-button>a:hover {
+    color: #ffedb8;
+}
 /* ---------------------------------Songs-------------------------------------- */
 
 

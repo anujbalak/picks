@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 Library</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../../index.html"><img class="logo-image" src="../../assets/images/logo.png" alt="A Pocket"></a>
+        <div class="logo-text">PICKS</div>
+    </header>
+    <div class="section">
+        <div class="page-info">
+            <div class="page-title">Library</div>
+            <div class="page-discription">Make your personalized Library</div>
+        </div>
+        <div class="book-container">
+            <ul class="books">
+                
+            </ul>
+        </div>
+        <div class="custom-list">
+            <button class="custom-list-button">➕ Add</button>
+        </div>
+        <dialog class="'dialog">
+            <form class="form">
+                <button value="cancel" formmethod="dialog" id="closeButton">×</button>
+                <label for="title" class="title-container">
+                    Title:
+                    <input type="text" id="title" name="title">
+                </label>
+                <label for="author" class="author-container">
+                    Author:
+                    <input type="text" id="author" name="author">
+                </label>
+                <label for="pages" class="page-container">
+                    Pages:
+                    <input type="number" name="pages" id="pages" inputmode="numeric" >
+                </label>
+                <!-- <label for="status" class="status-container">
+                    Status:
+                    <select name="status" id="status">
+                        <option value="No">No</option>
+                        <option value="Reading">Reading</option>
+                        <option value="Finished">Finished</option>
+                    </select>
+                </label> -->
+                <button id="confirmButton" value="default">Add Book</button>
+            </form>
+        </dialog>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
