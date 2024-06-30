@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
 * {
+    zoom: 1;
  padding: 0;
  margin: 0;
  box-sizing: border-box;
@@ -202,4 +203,7 @@ input#pages {
     .card {
      flex-wrap: wrap;
     }
+    .bookInfo {
+        grid-template: repeat(4, 1fr) / 1fr;
+     }
 }
