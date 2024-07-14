@@ -117,6 +117,10 @@ button.custom-list-button:hover {
     cursor: pointer;  
     color: #ffedb8;
 }
+
+#statusValue {
+    border: none;
+}
 /* ---------------------------------dialog-------------------------------------- */
 dialog {
     border: #4D4D4D solid 2px;

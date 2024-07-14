@@ -2,10 +2,18 @@ const bookList = document.querySelector('ul')
 
 const myLib = [];
 
-function Book(title, author, pages) {
+class Book {
+    constructor(title, author, pages) {
     this.title = title;
     this.author = author;
     this.pages = pages;
+    }
+
+    get book() {
+        this._title = title;
+        this._author = author;
+        this._pages = pages;
+    }
 }
 
 function showOutput() {
