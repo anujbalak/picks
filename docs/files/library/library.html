@@ -25,19 +25,22 @@
             <button class="custom-list-button">➕ Add</button>
         </div>
         <dialog class="'dialog">
-            <form class="form">
+            <form class="form" novalidate>
                 <button value="cancel" formmethod="dialog" id="closeButton">×</button>
                 <label for="title" class="title-container">
-                    Title:
-                    <input type="text" id="title" name="title">
+                    <p>Title:</p>
+                    <input type="text" id="title" name="title" required>
+                    <span class="title-error" aria-live="polite"></span>
                 </label>
                 <label for="author" class="author-container">
                     Author:
-                    <input type="text" id="author" name="author">
+                    <input type="text" id="author" name="author" required>
+                    <span class="author-error" aria-live="polite"></span>
                 </label>
                 <label for="pages" class="page-container">
                     Pages:
-                    <input type="number" name="pages" id="pages" inputmode="numeric" >
+                    <input type="number" name="pages" id="pages" inputmode="numeric" required pattern="[0-9]">
+                    <span class="pages-error" aria-live="polite"></span>
                 </label>
                 <!-- <label for="status" class="status-container">
                     Status:

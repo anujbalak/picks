@@ -132,32 +132,39 @@ dialog {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    max-width: 396px;
 }
 
 dialog form {
     display: grid;
-    gap: 20px;
+    gap: 10px;
     grid-template-rows: 1fr repeat(4, 1.5fr);
 }
 
 form label {
     color: #ffedb8;
-    font-size: 2.5rem;
-    display: flex;
-    gap: 10px;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: min-content minmax(200px, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-items: center;
 }
 
 label input, select{
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #ffedb8;
-    width: 300px;
     border-bottom: #ffedb8 2px solid;
     background-color: transparent;
     border-radius: 10px;
+}
+
+label span {
+    font-size: 1rem;
+    grid-column: 1 / 3;
 }
 
 select {
@@ -173,6 +180,7 @@ select:focus {
 }
 
 #closeButton, #confirmButton, .removeBtn {
+    cursor: pointer;
     width: 50px;
     font-size: 2rem;
     justify-self: right;
